@@ -1,5 +1,5 @@
-## Available Scripts
+# Burger Building App
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+Application offers several ingredients and lets you build a custom burger. 
