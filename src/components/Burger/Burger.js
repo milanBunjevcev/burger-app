@@ -4,6 +4,7 @@ import classes from "./Burger.module.css";
 import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
 
 const burger = (props) => {
+    console.log(props);
     // const transformedIngredients = Object.keys(props.ingredients)
     //     .map((igKey) => {
     //         return [...Array(props.ingredients[igKey])].map((_, i) => {
@@ -22,7 +23,9 @@ const burger = (props) => {
     ingredientNames.map((name) => {
         const numberOfIngredients = props.ingredients[name];
         for (let i = 0; i < numberOfIngredients; i++) {
-            transformedIngredients.push(<BurgerIngredient key={name + i} type={name} />);
+            transformedIngredients.push(
+                <BurgerIngredient key={name + i} type={name} />
+            );
         }
         return null;
     });
